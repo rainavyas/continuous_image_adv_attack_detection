@@ -47,8 +47,8 @@ def train(train_loader, model, criterion, optimizer, epoch, device, print_freq=5
         losses.update(loss.item(), input.size(0))
         top1.update(prec1.item(), input.size(0))
 
-        if i % args.print_freq == 0:
-            print(f'Epoch: [{epoch}][{i}/{len(train_loader)}]\t Loss {loss.val:.4f} ({loss.avg:.4f}) \t Prec@1 {top1.val:.3f} ({top1.avg:.3f})')
+        if i % print_freq == 0:
+            print(f'Epoch: [{epoch}][{i}/{len(train_loader)}]\t Loss {loss.val:.4f} ({loss.avg:.4f})\t Prec@1 {top1.val:.3f} ({top1.avg:.3f})')
     
 def validate(val_loader, model, criterion, device):
     """
