@@ -13,8 +13,6 @@ python3.7 or above
 
 pip install torch, torchvision
 
-pip install transformers
-
 pip install cnn_finetune
 
 # Training
