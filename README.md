@@ -7,7 +7,7 @@ Image classification task, using VGG-16 architecture on CIFAR-100 data. Adversar
 
 # Requirements
 
-python3.4 or above
+python3.7 or above
 
 ## Necessary Packages (installation with PyPI)
 
